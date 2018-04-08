@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.h_g.co.kr.healthcare.pulseActivity">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout android:id="@+id/chart_line"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:layout_height="match_parent"
+                    android:text="평균 심박수"/>
+                <TextView
+                    android:layout_height="match_parent"
+                    android:text="100BPM"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_height="match_parent"
+                    android:text="심박수 편차"/>
+                <TextView
+                    android:layout_height="match_parent"
+                    android:text="--"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:gravity="center"
+                    android:layout_span="2"
+                    android:layout_height="match_parent"
+                    android:text="스트레스에  주의를 기울여 주세요"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="심박수 측정하기"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
